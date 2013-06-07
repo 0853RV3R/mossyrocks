@@ -1,0 +1,253 @@
+/*
+	Variable Grid System.
+	Learn more ~ http://www.spry-soft.com/grids/
+	Based on 960 Grid System - http://960.gs/
+
+	Licensed under GPL and MIT.
+*/
+
+/*
+  Forces backgrounds to span full width,
+  even if there is horizontal scrolling.
+  Increase this if your layout is wider.
+
+  Note: IE6 works fine without this fix.
+*/
+
+body {
+  min-width: 1020px;
+ font-family: 'Merriweather Sans', sans-serif;
+ color: rgb(255, 255, 255);
+}
+
+.title_1 {
+    font-size:150%;
+    font-weight:700;
+}
+
+.title_2 {
+    font-size:120%;
+    font-weight:700;
+}
+
+.title_3 {
+    font-size:120%;
+    font-weight:500;
+}
+
+.spreader {
+    width = 1020px;
+    margin:0 0 20px 0px;
+}
+
+.special {
+    margin: 0 0 0 0px;
+}
+
+#login-widget {
+    margin-left: auto;
+    margin-right: auto;
+    width:600px;
+    background:rgb(255, 224, 224);
+}
+
+#login-widget input{
+    margin: 4px 0px;
+    font-size:0.9em;
+}
+
+#login-widget p{
+    width:100%;
+}
+
+#login-widget button{
+    float:right;
+        
+}
+
+.loginLink {
+    font-size:0.9em;
+}
+
+.metadata {
+    font-size:0.9em;
+    font-weight:700;
+}
+    
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_3 {
+	margin-left: auto;
+	margin-right: auto; 
+	width: 980px;
+    background-image:url('940_3_20.png');
+    overflow: auto;
+}
+
+.container_4 {
+	margin-left: auto;
+	margin-right: auto; 
+	width: 980px;
+    background: rgb(0, 0, 0);
+    overflow: auto;
+}
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+
+.grid_1,
+.grid_2,
+.grid_3 {
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 0px;
+	margin-right: 0px;
+    margin-bottom: 10px;
+}
+
+
+
+.push_1, .pull_1,
+.push_2, .pull_2,
+.push_3, .pull_3 {
+	position:relative;
+}
+
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+	margin-left: 0px;
+}
+
+.omega {
+	margin-right: 0px;
+}
+
+/* Grid >> 3 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_4 .grid_1 {
+	width:640px;
+    font-size:0.9em;
+    
+}
+
+.container_4 .grid_2 {
+	width:20px;
+}
+
+.container_4 .grid_3 {
+	width:320px;
+}
+
+
+
+
+/* Prefix Extra Space >> 3 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_3 .prefix_1 {
+	padding-left:320px;
+}
+
+.container_3 .prefix_2 {
+	padding-left:640px;
+}
+
+
+
+/* Suffix Extra Space >> 3 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_3 .suffix_1 {
+	padding-right:320px;
+}
+
+.container_3 .suffix_2 {
+	padding-right:640px;
+}
+
+
+
+/* Push Space >> 3 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_3 .push_1 {
+	left:320px;
+}
+
+.container_4 .push_1 {
+	left:320px;
+}
+
+.container_3 .push_2 {
+	left:640px;
+}
+
+.container_4 .push_2 {
+	left:640px;
+}
+
+
+/* Pull Space >> 3 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_3 .pull_1 {
+	left:-320px;
+}
+
+.container_3 .pull_2 {
+	left:-640px;
+}
+
+
+
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+
+.clearfix {
+  zoom: 1;
+}

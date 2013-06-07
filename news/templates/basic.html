@@ -5,21 +5,22 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>:::MOSSY ROCKS -^- Toronto:::</title>
-<LINK REL=StyleSheet HREF="MossyDreamStyle.css" TYPE="text/css">
+<LINK REL=StyleSheet HREF="{{ STATIC_URL }}css/cssTillIDie.css" TYPE="text/css">
 
 </head>
 
 <body>
 
 
-<div id= "Title" >
+<div class= "container_4" >
+    <div class="clearfix">
     
-    <img src="images/MR-head.gif" alt=":::MOSSY ROCKS:::" onmouseover="this" src="images/MR-head2.gif" onmouseout="images/MR-head.gif" width="911" height="142" /> 
-
-</div>
+<img src="{{ STATIC_URL }}images/MR-head.gif" alt=":::MOSSY ROCKS:::" onmouseover="this" src="{{ STATIC_URL }}images/MR-head.gif" onmouseout="images/MR-head.gif" width="911" height="142" /> 
 
 
-<div class= "mainNavigation" >	
+
+
+	
     <br>
     <ul class ="nav">
         <li class ="nav"><a href="#" >News</a></li>
@@ -29,7 +30,7 @@
         <li class ="nav"><a href="#" >Bio</a></li>
     </ul>
 
-</div>
+
 
 <br>
 <br>
@@ -40,6 +41,9 @@
 {% block sidebar %} {% endblock sidebar %}
 {% block footer %} {% endblock footer %}
 
+</div>
+</div>
+    
 </body>
 
 </html>
