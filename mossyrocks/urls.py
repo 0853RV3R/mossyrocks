@@ -6,8 +6,11 @@ from django.conf.urls import patterns, include, url
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'mossyrocks.views.home', name='home'),
-    # url(r'^mossyrocks/', include('mossyrocks.foo.urls')),
+     url(r'^$', 'news.views.index', name='home'),
+     url(r'^login/$', 'django.contrib.auth.views.login'),
+     url(r'^logout/$', 'django.contrib.auth.views.logout', {'next_page': '/'}),
+     
+    #url(r'^mossyrocks/', include('mossyrocks.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
