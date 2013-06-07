@@ -88,7 +88,9 @@ body {
 
 .container_4 {
 	margin-left: auto;
-	margin-right: auto; 
+	margin-right: auto;
+    width: 1040px; 
+    background-color: rgb(0, 0, 0);
     overflow: auto;
 }
 
@@ -99,12 +101,13 @@ body {
 .grid_1,
 .grid_2,
 .grid_3 {
-	display:inline;
+	display:inline-block;
 	float: left;
 	position: relative;
 	margin-left: 0px;
 	margin-right: 0px;
     margin-bottom: 10px;
+    padding: 5px 5px 5px 8px;
 }
 
 
@@ -131,7 +134,8 @@ body {
 ----------------------------------------------------------------------------------------------------*/
 
 .container_3 .grid_1 {
-	width:600px;
+    display:inline-block;
+	width:640px;
     font-size:0.9em;
     padding: 5px 5px 5px 8px;
     border-style: solid;
@@ -145,16 +149,19 @@ body {
 }
 
 .container_3 .grid_3 {
-	width:300px;
+    display:inline-block;
+	width:320px;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(40, 40, 40);
     padding: 5px, 5px, 5px 8px;
+    margin-left: 20px;
 }
 
 
 .container_4 .grid_1 {
-	width:600px;
+    display:inline-block;
+	width:640px;
     font-size:0.9em;
     padding: 5px 5px 5px 8px;
     border-style: solid;
@@ -168,11 +175,13 @@ body {
 }
 
 .container_4 .grid_3 {
-	width:300px;
+    display:inline-block;
+	width:320px;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(40, 40, 40);
     padding: 5px, 5px, 5px 8px;
+    margin-left: 20px;
 }
 
 
