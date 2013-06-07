@@ -2,6 +2,16 @@
 
 {% block main %}
 
+    <div class="grid_1">
+        booking contact // phone: {{ contact.phone }} // email: {{ contact.email }}
+        {% block edit %}
+            {% if user.is_authenticated %}
+                <br>
+                <a href="{% url 'news.views.editcontact' %}">EDIT CONTACT INFO<a>
+            {% endif %}
+        {% endblock edit %}
+    </div>
+
 
     <div class="grid_1">
         <div class="clearfix">

@@ -9,7 +9,8 @@ urlpatterns = patterns('',
      url(r'^$', 'news.views.index', name='home'),
      url(r'^login/$', 'django.contrib.auth.views.login'),
      url(r'^logout/$', 'django.contrib.auth.views.logout', {'next_page': '/'}),
-     url(r'^addtourdate/$', 'news.views.addtourdate'),     
+     url(r'^addtourdate/$', 'news.views.addtourdate'),
+     url(r'^editcontact/$', 'news.views.editcontact'),
     #url(r'^mossyrocks/', include('mossyrocks.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

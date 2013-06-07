@@ -1,0 +1,22 @@
+{% extends 'news.html' %}
+
+{% block edit %}
+
+{% if user.is_authenticated %}
+<form method="post" action="{% url 'news.views.edit' %}">
+    {% csrf_token %}
+    {% for field in form3 %}
+    <table>
+        <tr>
+            <td> {{ field.label_tag }} </td>
+        </tr>
+        <tr>
+            <td> {{ field }} </td>
+        </tr>
+    </table>
+    {% endfor %}
+    <button id="edit-contact-submit">SUBMIT</button>
+</form>
+{% endif %}
+
+{% endblock edit %}
