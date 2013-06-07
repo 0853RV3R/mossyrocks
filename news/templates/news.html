@@ -1,17 +1,20 @@
 {% extends 'basic.html' %}
 
 {% block header %}
+<div class="container_4">
 
     <div class="grid_1">
+        <div class="clearfix">
         
             {% for entry in story %}
                 <div class="title_2">Stories</div><br><br>
-                {{ entry.title }}
-                {{ entry.message }}
+                {{ entry.title }}<br><br>
+                {{ entry.message }}<br>
                 {{ entry.date_posted }}
             {% endfor %}
         <br><br>
-        </div>
+
+        
   
 {% endblock header %}
 
@@ -19,28 +22,33 @@
 {% block main %}
 {% if user.is_authenticated %}
 
-    <div class="grid_1">
             <div class="title_2">Add story</div><br><br>
                 <form method="post" action="{% url 'news.views.index' %}">
                     {% csrf_token %}
                     {% for field in form %}
                     <table>
                         <tr>
-                            <td>{{ field.label_tag }}</td><td>{{ field }}</td>
+                            <td>{{ field.label_tag }}</td>
+                        </tr>
+                        <tr>
+                            <td>{{ field }}</td>
                         </tr>
                     </table>
                     <br>
                     {% endfor %}
                     <button id="new-post-submit">SUBMIT</button>
                 </form>
+        </div>
     </div>
 
-{% endif %}
-{% endblock main %}
 
-    <div class="grid_2"></div>
+{% endif %}
+
+
+   
+<div class="clearfix">
     <div class="grid_3">
-        {% block sidebar %}
+        
 
         <div class="title_2">Tour dates</div><br><br>
 
@@ -59,7 +67,10 @@
             {% for field in form2 %}
             <table>
                 <tr>
-                    <td>{{ field.label_tag }}</td><td>{{ field }}</td>
+                    <td>{{ field.label_tag }}</td>
+                </tr>
+                <tr>
+                    <td>{{ field }}</td>
                 </tr>
             </table>
             <br>
@@ -69,9 +80,12 @@
         <br><br>
         {% endif %}
 
-        {% endblock sidebar %}
     </div>
-
+</div>
+<div class="clear">
+    </div>
+    </div>
+{% endblock main %}
 
 {% block footer %} 
 

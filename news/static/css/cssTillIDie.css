@@ -15,9 +15,10 @@
 */
 
 body {
-  min-width: 1020px;
+
  font-family: 'Merriweather Sans', sans-serif;
  color: rgb(255, 255, 255);
+
 }
 
 .title_1 {
@@ -80,16 +81,14 @@ body {
 .container_3 {
 	margin-left: auto;
 	margin-right: auto; 
-	width: 980px;
-    background-image:url('940_3_20.png');
+	width: 1040px;
+    background-color: rgb(0, 0, 0);
     overflow: auto;
 }
 
 .container_4 {
 	margin-left: auto;
 	margin-right: auto; 
-	width: 980px;
-    background: rgb(0, 0, 0);
     overflow: auto;
 }
 
@@ -131,10 +130,36 @@ body {
 /* Grid >> 3 Columns
 ----------------------------------------------------------------------------------------------------*/
 
+.container_3 .grid_1 {
+	width:600px;
+    font-size:0.9em;
+    padding: 5px 5px 5px 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(40, 40, 40);
+    
+}
+
+.container_3 .grid_2 {
+	width:20px;
+}
+
+.container_3 .grid_3 {
+	width:300px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(40, 40, 40);
+    padding: 5px, 5px, 5px 8px;
+}
+
 
 .container_4 .grid_1 {
-	width:640px;
+	width:600px;
     font-size:0.9em;
+    padding: 5px 5px 5px 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(40, 40, 40);
     
 }
 
@@ -143,7 +168,11 @@ body {
 }
 
 .container_4 .grid_3 {
-	width:320px;
+	width:300px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(40, 40, 40);
+    padding: 5px, 5px, 5px 8px;
 }
 
 
