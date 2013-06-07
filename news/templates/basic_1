@@ -22,11 +22,11 @@
 <div class= "mainNavigation" >	
     <br>
     <ul class ="nav">
-        <li class ="nav"><a href="#" >News</a></li>
-        <li class ="nav"><a href="#" >Music</a></li>
-        <li class ="nav"><a href="#" >Tour</a></li>
-        <li class ="nav"><a href="#" >Contact</a></li>
-        <li class ="nav"><a href="#" >Bio</a></li>
+        <li class ="nav"><a href="#" {% block block1 %}{% endblock block1 %}>News</a></li>
+        <li class ="nav"><a href="#" {% block block2 %}{% endblock block2 %}>Music</a></li>
+        <li class ="nav"><a href="#" {% block block3 %}{% endblock block3 %}>Tour</a></li>
+        <li class ="nav"><a href="#" {% block block4 %}{% endblock block4 %}>Contact</a></li>
+        <li class ="nav"><a href="#" {% block block5 %}{% endblock block5 %}>Bio</a></li>
     </ul>
 
 </div>
@@ -36,7 +36,6 @@
 
 {% block header %} {% endblock header %}
 {% block main %} {% endblock main %}
-{% block main2 %}{% endblock main2 %}
 {% block sidebar %} {% endblock sidebar %}
 {% block footer %} {% endblock footer %}
 

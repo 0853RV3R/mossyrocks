@@ -4,29 +4,66 @@
 
 
 
-{% block main %}  
+{% block header %}
 	{% for entry in story %}
-		{{ story.title }}      
-		{{ story.message }}
-		{{ story.date_posted }}
+        Stories<br><br>
+		{{ entry.title }}
+		{{ entry.message }}
+		{{ entry.date_posted }}
 	{% endfor %}
-{% endblock main %}
+<br><br>
+{% endblock header %}
 
-{% block header %} 
+
+{% block main %}
 	{% if user.is_authenticated %}
-		<form method="post" action="{% url 'news.views.index' %}"> 
+    Add story <br><br>
+		<form method="post" action="{% url 'news.views.index' %}">
 			{% csrf_token %}
 			{% for field in form %}
-				{{ field.label_tag }}
-				{{ field }}
-				<br>
+            <table>
+                <tr>
+                    <td>{{ field.label_tag }}</td><td>{{ field }}</td>
+                </tr>
+            </table>
+            <br>
 			{% endfor %}
 			<button id="new-post-submit">SUBMIT</button>
 		</form>
 	{% endif %}
-{% endblock header %}
+{% endblock main %}
 
-{% block sidebar %} {% endblock sidebar %}
+
+{% block sidebar %}
+
+Tour dates <br><br>
+
+{% for instance in tourdate %}
+    {{ instance.city }} | {{ instance.venue }} | {{ instance.date }} | 
+        <a href="{{ instance.optional_link_1 }}">{{ instance.optional_link_1_description }}</a>  
+        <a href="{{ instance.optional_link_2 }}"> {{ instance.optional_link_2_description }}</a>
+    <br><br>
+{% endfor %}
+
+{% if user.is_authenticated %}
+
+Add tour date <br><br>
+<form method="post" action="{% url 'news.views.addtourdate' %}">
+    {% csrf_token %}
+    {% for field in form2 %}
+    <table>
+        <tr>
+            <td>{{ field.label_tag }}</td><td>{{ field }}</td>
+        </tr>
+    </table>
+    <br>
+    {% endfor %}
+    <button id="new-tourdate-submit">SUBMIT</button>
+</form>
+<br><br>
+{% endif %}
+
+{% endblock sidebar %}
 
 {% block footer %} 
 

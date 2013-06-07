@@ -1,7 +1,13 @@
 from django import forms
-from news.models import Story
+from django.forms import Textarea
+from news.models import Story, Tourdate
 
 class StoryForm(forms.ModelForm):
+        class Meta:
+                model = Story
+                widgets = {'message': Textarea(),}
+                
 
-	class Meta:
-		model = Story
+class TourdateForm(forms.ModelForm):
+        class Meta:
+                model = Tourdate
