@@ -42,7 +42,7 @@ body {
 }
 
 .special {
-    margin: 5px 0 0 0px;
+    margin: 0px 0 0 0px;
 }
 
 #login-widget {
@@ -107,8 +107,8 @@ body {
 	position: relative;
 	margin-left: 0px;
 	margin-right: 0px;
-    margin-bottom: 10px;
-    padding: 10px 5px 5px 8px;
+    margin-bottom: 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 
@@ -156,54 +156,69 @@ body {
 /*    border-style: solid;*/
 /*    border-width: 1px;*/
 /*    border-color: rgb(40, 40, 40); */
-    padding: 10px, 5px, 5px 8px;
+    padding: 0px, 0px, 0px 0px;
     margin-left: 20px;
 }
 
 
 .container_4 .grid_1 {
     display:inline-block;
-	width:640px;
+	width:660px;
     font-size:0.9em;
-    padding: 10px 5px 5px 8px;
-    background-color: rgb(30, 30, 30);
+    padding: 0px 0px 0px 0px;
+    background-color: rgb(20, 30, 20);
 /*    border-style: solid;*/
 /*    border-width: 1px;*/
 /*    border-color: rgb(40, 40, 40); */
-    margin-left: 20px;
+    margin-left: 10px;
     
 }
 
 .container_4 .grid_1_head {
     display:inline-block;
-	width:640px;
+	width:660px;
     font-size:0.9em;
-    padding: 10px 5px 5px 8px;
+    padding: 0px 0px 0px 0px;
     /*    border-style: solid;*/
     /*    border-width: 1px;*/
     /*    border-color: rgb(40, 40, 40); */
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
     
+}
+
+.container_4 .grid_2 {
+    display:inline-block;
+	width:1000px;
+    /*    border-style: solid;*/
+    /*    border-width: 1px; */
+    /*    border-color: rgb(40, 40, 40); */
+    background-color: rgb(40, 50, 40);
+    padding: 0px, 0px, 0px 0px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .container_4 .grid_3 {
     display:inline-block;
-	width:310px;
+	width:320px;
 /*    border-style: solid;*/
 /*    border-width: 1px; */
 /*    border-color: rgb(40, 40, 40); */
-    background-color: rgb(30, 30, 30);
-    padding: 10px, 5px, 5px 8px;
+    background-color: rgb(20, 30, 20);
+    padding: 0px, 0px, 0px 0px;
     margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 .metadata:hover {
     width: 310px;
     background-color: rgb(100, 187, 43);
     color: rgb(0, 0 , 0);
+    padding: 0 0 0 0px;
 }
 
-.metadata>a:hover {
+.metadata a:hover {
     color: rgb(0, 0, 0);
 }
 

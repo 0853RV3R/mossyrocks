@@ -2,8 +2,13 @@
 
 {% block main %}
 
-    <div class="grid_1">
-        booking contact // phone: {{ contact.phone }} // email: {{ contact.email }}
+    <div class="grid_2">
+        <table>
+            <tr>
+                <td>booking contact</td><td><td></td></td><td> phone: {{ contact.phone }}</td><td><td></td></td><td>email: {{ contact.email }}</td>
+            </tr>
+        </table>
+
         {% block edit %}
             {% if user.is_authenticated %}
                 <br>
@@ -105,8 +110,17 @@
         {% endif %}
         </div>
     </div>
+
+
+<div class="grid_3">
+    <div class="title_2">listen</div><br><br>
+    soundcloud links<br><br>
+    soundcloud links<br><br>
+    soundcloud links<br><br>
+</div>
 <div class="clear">
 </div>
+    
 {% endblock main %}
 
 {% block footer %} 
