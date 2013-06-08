@@ -32,8 +32,13 @@ body {
 }
 
 .title_3 {
-    font-size:120%;
-    font-weight:500;
+    font-size:100%;
+    font-weight:700;
+}
+
+.date {
+    font-size:90%;
+    text-align: right;
 }
 
 .spreader {
@@ -41,34 +46,12 @@ body {
     margin:0 0 20px 0px;
 }
 
-.special {
-    margin: 0px 0 0 0px;
+table {
+    width: 100%;
 }
 
-#login-widget {
-    margin-left: auto;
-    margin-right: auto;
-    width:600px;
-    background:rgb(255, 224, 224);
-}
 
-#login-widget input{
-    margin: 4px 0px;
-    font-size:0.9em;
-}
 
-#login-widget p{
-    width:100%;
-}
-
-#login-widget button{
-    float:right;
-        
-}
-
-.loginLink {
-    font-size:0.9em;
-}
 
 .metadata {
     font-size:0.9em;
@@ -79,18 +62,12 @@ body {
 
 /* Containers
 ----------------------------------------------------------------------------------------------------*/
-.container_3 {
-	margin-left: auto;
-	margin-right: auto; 
-	width: 1040px;
-    background-color: rgb(0, 0, 0);
-    overflow: auto;
-}
+
 
 .container_4 {
 	margin-left: auto;
 	margin-right: auto;
-    width: 1040px; 
+    width: 1040px;
     background-color: rgb(0, 0, 0);
     overflow: auto;
 }
@@ -108,7 +85,7 @@ body {
 	margin-left: 0px;
 	margin-right: 0px;
     margin-bottom: 0px;
-    padding: 0px 0px 0px 0px;
+    padding: 8px 8px 8px 8px;
 }
 
 
@@ -134,88 +111,64 @@ body {
 /* Grid >> 3 Columns
 ----------------------------------------------------------------------------------------------------*/
 
-.container_3 .grid_1 {
-    display:inline-block;
-	width:640px;
-    font-size:0.9em;
-    padding: 10px 5px 5px 8px;
-/*    border-style: solid;*/
-/*    border-width: 1px;*/
-/*    border-color: rgb(40, 40, 40); */
-    margin-left: 20px;
-    
-}
-
-.container_3 .grid_2 {
-	width:20px;
-}
-
-.container_3 .grid_3 {
-    display:inline-block;
-	width:300px;
-/*    border-style: solid;*/
-/*    border-width: 1px;*/
-/*    border-color: rgb(40, 40, 40); */
-    padding: 0px, 0px, 0px 0px;
-    margin-left: 20px;
-}
-
 
 .container_4 .grid_1 {
     display:inline-block;
-	width:660px;
+	width:625px;
     font-size:0.9em;
-    padding: 0px 0px 0px 0px;
+    padding: 11px 11px 11px 11px;
     background-color: rgb(20, 30, 20);
-/*    border-style: solid;*/
-/*    border-width: 1px;*/
-/*    border-color: rgb(40, 40, 40); */
-    margin-left: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(60, 70, 60);
+    margin: 10px 5px 0px 10px;
     
 }
 
 .container_4 .grid_1_head {
     display:inline-block;
-	width:660px;
+	width:640px;
+    float: left;
     font-size:0.9em;
-    padding: 0px 0px 0px 0px;
+    padding: 8px 8px 8px 8px;
     /*    border-style: solid;*/
     /*    border-width: 1px;*/
     /*    border-color: rgb(40, 40, 40); */
-    margin-left: 10px;
-    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-bottom: 3px;
     
 }
 
 .container_4 .grid_2 {
     display:inline-block;
-	width:1000px;
-    /*    border-style: solid;*/
-    /*    border-width: 1px; */
-    /*    border-color: rgb(40, 40, 40); */
-    background-color: rgb(40, 50, 40);
-    padding: 0px, 0px, 0px 0px;
-    margin-left: 10px;
-    margin-bottom: 10px;
+	width:1032px;
+    color: rgb(0, 0, 0);
+        /*border-style: solid;
+        border-width: 1px;
+        border-color: rgb(40, 40, 40); */
+    background-color: rgb(230, 230, 230);
+    padding: 0px 0px 0px 8px;
+    margin-left: 0px;
+    margin-bottom: 0px;
 }
 
 .container_4 .grid_3 {
     display:inline-block;
-	width:320px;
-/*    border-style: solid;*/
-/*    border-width: 1px; */
-/*    border-color: rgb(40, 40, 40); */
-    background-color: rgb(20, 30, 20);
-    padding: 0px, 0px, 0px 0px;
-    margin-left: 20px;
-    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+	width:343px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(60, 70, 60);
+    background-color: rgb(230, 230, 230);
+    padding: 8px 8px 8px 8px;
+    margin: 10px 10px 10px 5px;
 }
 
 .metadata:hover {
-    width: 310px;
-    background-color: rgb(100, 187, 43);
+    width: 340px;
     color: rgb(0, 0 , 0);
     padding: 0 0 0 0px;
+    background-color: rgb(95, 207, 52);
 }
 
 .metadata a:hover {
