@@ -31,4 +31,4 @@ class Contact(models.Model):
         phone = models.CharField(max_length=300)
         email = models.CharField(max_length=300)
 
-        
+

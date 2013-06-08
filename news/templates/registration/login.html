@@ -1,4 +1,4 @@
-{% extends 'news.html' %}
+{% extends 'basic.html' %}
 
 
 {% block header %} 
@@ -8,6 +8,7 @@ Your username and password didn't match. Please try again
 {% endif %}
 
 <div class="grid_1">
+    <div class="spreader">
 <form method="POST" action="{% url 'django.contrib.auth.views.login' %}">
 	{% csrf_token %}
 	<table>
@@ -23,7 +24,13 @@ Your username and password didn't match. Please try again
 	<input type="submit" value="login" />
 	<input type="hidden" name="next" value="/" />
 </form>
+    
+    
+    
+    </div>
+    
 </div>
+
 
 
 {% endblock header %}

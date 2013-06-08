@@ -3,7 +3,9 @@
 {% block main %}
 
     <div class="grid_2">
+        <div class="except">
         <table>
+            
             <tr>
                 <td></td>
             </tr>
@@ -11,7 +13,7 @@
                 <td></td>
             </tr>
             <tr>
-                <td>booking contact</td><td><td></td></td><td> phone: {{ contact.phone }}</td><td><td></td></td><td>email: {{ contact.email }}</td>
+                <td>booking contact</td><td> | </td><td> phone: {{ contact.phone }}</td><td> | </td><td>email: {{ contact.email }}</td>
             </tr>
             <tr>
                 <td></td>
@@ -19,8 +21,9 @@
             <tr>
                 <td></td>
             </tr>
+               
         </table>
-
+         </div>
         {% block edit %}
             {% if user.is_authenticated %}
                 <br>
