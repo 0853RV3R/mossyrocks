@@ -3,7 +3,7 @@
 {% block edit %}
 
 {% if user.is_authenticated %}
-<form method="post" action="{% url 'news.views.edit' %}">
+<form method="post" action="{% url 'news.views.editcontact' %}">
     {% csrf_token %}
     {% for field in form3 %}
     <table>

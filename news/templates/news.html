@@ -15,19 +15,32 @@
 
     <div class="grid_1">
         <div class="clearfix">
-        <div class="title_2">Stories</div><br><br>
+        <div class="title_2">stories</div><br><br>
             {% for entry in story %}
-                {{ entry.title }}<br><br>
-                {{ entry.message }}<br>
-                {{ entry.date_posted }}<br><br><br>
+            
+                <table>
+                    <tr>
+                        <td><div class="title_3">{{ entry.title }}</div></td><td>{{ entry.date_posted }}</td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <td>{{ entry.message }}</td>
+                        <br>
+                    <tr>
+                </table>
+                <br><br><br>
+                <hr>
+           
             {% endfor %}
         <br><br>
 
         
 
             {% if user.is_authenticated %}
-
-            <div class="title_2">Add story</div><br><br>
+            
+            <div class="title_2">add story</div><br><br>
                 <form method="post" action="{% url 'news.views.index' %}">
                     {% csrf_token %}
                     {% for field in form %}
@@ -45,9 +58,9 @@
                 </form>
             
             {% endif %}
-            
+            </div>
         </div>
-    </div>
+    
 
 
 
@@ -59,18 +72,20 @@
         <div class="clearfix">
         
 
-        <div class="title_2">Tour dates</div><br><br>
+        <div class="title_2">tour dates</div><br><br>
 
         {% for instance in tourdate %}
-            {{ instance.city }} | {{ instance.venue }} | {{ instance.date }} | 
-                <a href="{{ instance.optional_link_1 }}">{{ instance.optional_link_1_description }}</a>  
+            <div class="metadata">
+            {{ instance.city }} | {{ instance.venue }} | {{ instance.date }} <br><br>
+                <a href="{{ instance.optional_link_1 }}">{{ instance.optional_link_1_description }}</a> <br><br>
                 <a href="{{ instance.optional_link_2 }}"> {{ instance.optional_link_2_description }}</a>
-            <br><br>
+            <br>
+            </div>
         {% endfor %}
 
         {% if user.is_authenticated %}
 
-        <div class="title_2">Add tour date</div><br><br>
+        <div class="title_2">add tour date</div><br><br>
         <form method="post" action="{% url 'news.views.addtourdate' %}">
             {% csrf_token %}
             {% for field in form2 %}

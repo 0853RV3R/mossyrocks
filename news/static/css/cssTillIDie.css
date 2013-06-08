@@ -42,7 +42,7 @@ body {
 }
 
 .special {
-    margin: 0 0 0 0px;
+    margin: 5px 0 0 0px;
 }
 
 #login-widget {
@@ -108,7 +108,7 @@ body {
 	margin-left: 0px;
 	margin-right: 0px;
     margin-bottom: 10px;
-    padding: 5px 5px 5px 8px;
+    padding: 10px 5px 5px 8px;
 }
 
 
@@ -138,10 +138,10 @@ body {
     display:inline-block;
 	width:640px;
     font-size:0.9em;
-    padding: 5px 5px 5px 8px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(40, 40, 40);
+    padding: 10px 5px 5px 8px;
+/*    border-style: solid;*/
+/*    border-width: 1px;*/
+/*    border-color: rgb(40, 40, 40); */
     margin-left: 20px;
     
 }
@@ -152,11 +152,11 @@ body {
 
 .container_3 .grid_3 {
     display:inline-block;
-	width:320px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(40, 40, 40);
-    padding: 5px, 5px, 5px 8px;
+	width:300px;
+/*    border-style: solid;*/
+/*    border-width: 1px;*/
+/*    border-color: rgb(40, 40, 40); */
+    padding: 10px, 5px, 5px 8px;
     margin-left: 20px;
 }
 
@@ -165,28 +165,47 @@ body {
     display:inline-block;
 	width:640px;
     font-size:0.9em;
-    padding: 5px 5px 5px 8px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(40, 40, 40);
+    padding: 10px 5px 5px 8px;
+    background-color: rgb(30, 30, 30);
+/*    border-style: solid;*/
+/*    border-width: 1px;*/
+/*    border-color: rgb(40, 40, 40); */
     margin-left: 20px;
     
 }
 
-.container_4 .grid_2 {
-	width:20px;
+.container_4 .grid_1_head {
+    display:inline-block;
+	width:640px;
+    font-size:0.9em;
+    padding: 10px 5px 5px 8px;
+    /*    border-style: solid;*/
+    /*    border-width: 1px;*/
+    /*    border-color: rgb(40, 40, 40); */
+    margin-left: 20px;
+    
 }
 
 .container_4 .grid_3 {
     display:inline-block;
-	width:320px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(40, 40, 40);
-    padding: 5px, 5px, 5px 8px;
+	width:310px;
+/*    border-style: solid;*/
+/*    border-width: 1px; */
+/*    border-color: rgb(40, 40, 40); */
+    background-color: rgb(30, 30, 30);
+    padding: 10px, 5px, 5px 8px;
     margin-left: 20px;
 }
 
+.metadata:hover {
+    width: 310px;
+    background-color: rgb(100, 187, 43);
+    color: rgb(0, 0 , 0);
+}
+
+.metadata>a:hover {
+    color: rgb(0, 0, 0);
+}
 
 
 
