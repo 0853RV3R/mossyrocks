@@ -11,38 +11,27 @@
 
 <body>
 
-<div class="container_4">
-    
+<div class="Title">
+
 <img src="{{ STATIC_URL }}images/MR-head.gif" alt=":::MOSSY ROCKS:::" onmouseover="this" src="{{ STATIC_URL }}images/MR-head.gif" onmouseout="images/MR-head.gif" width="911" height="142" /> 
 
+</div>
 
 
 
-        {% comment %}
-        {% block navbar %}
-    <br>
-    <ul class ="nav">
-        <li class ="nav"><a href="#" >News</a></li>
-        <li class ="nav"><a href="#" >Music</a></li>
-        <li class ="nav"><a href="#" >Tour</a></li>
-        <li class ="nav"><a href="#" >Contact</a></li>
-        <li class ="nav"><a href="#" >Bio</a></li>
-    </ul>
-        {% endblock navbar %}
-        {% endcomment %}
 
 
-
-<br>
-<br>
 
 {% block header %} {% endblock header %}
+<div class="container_4">
+
 {% block main %} {% endblock main %}
 {% block main2 %}{% endblock main2 %}
 {% block sidebar %} {% endblock sidebar %}
 {% block footer %} {% endblock footer %}
-
 </div>
+
+
     
 </body>
 
