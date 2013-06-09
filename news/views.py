@@ -1,9 +1,10 @@
 # Create your views here.
 from django.http import HttpResponse
-from django.shortcuts import render, redirect
-from news.models import Story, Tourdate, Contact
-from news.forms import StoryForm, TourdateForm, ContactForm
-from django.contrib.auth.models import User 
+from django.shortcuts import render, redirect, get_object_or_404
+from news.models import Story, Tourdate, Contact, Sounds
+from news.forms import StoryForm, TourdateForm, ContactForm, SoundsForm
+from django.contrib.auth.models import User
+from django.core.exceptions import ObjectDoesNotExist
 
 def index(request):
 
@@ -33,17 +34,23 @@ def index(request):
 
     contactList = Contact.objects.get(pk=int(1))
 
+    soundsList = Sounds.objects.all()
+
 
     form = StoryForm()
 
     form2 = TourdateForm()
 
+    form3 = SoundsForm()
+
     context = {
             'story': storyList,
             'form': form,
             'form2': form2,
+            'form3': form3,
             'tourdate': tourdateList,
             'contact': contactList,
+            'soundsList': soundsList,
 
 
     }
@@ -111,4 +118,38 @@ def editcontact(request):
 
     return render(request, 'edit.html', context)
         
+
+def addSounds(request):
+    print("sound request")
+
+    if request.method == "POST":
+        form = SoundsForm(request.POST)
+        if form.is_valid:
+            new_sound = form.save()
+            print("new sound saved")
+            return redirect(index)
+        else:
+            print("errors")
+            response = 'Errors: '
+            for key in form.errors.keys():
+                value = form.errors[key]
+                errors = ''
+                for error in value:
+                    errors = errors + error + ' '
+                    response = response + ' ' + key + ': ' + errors
+            return HttpResponse('<li class="error">' + response + '</li>')
+
+    
+
+    return redirect(index)
+
+def deleteSounds(request, sound_id):
+
+    s = get_object_or_404(Sounds, pk=int(sound_id))
+    s.delete()
+
+    return redirect(index)
+
+    
         
+    

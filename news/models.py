@@ -31,4 +31,10 @@ class Contact(models.Model):
         phone = models.CharField(max_length=300)
         email = models.CharField(max_length=300)
 
+class Sounds(models.Model):
 
+        link = models.URLField()
+        track_name = models.CharField(max_length=500)
+
+        def __unicode__(self):
+                return self.track_name
