@@ -31,6 +31,7 @@ body {
 .title_2 {
     font-size:120%;
     font-weight:700;
+    color: white;
 }
 
 .title_3 {
@@ -121,7 +122,7 @@ table {
 
 .container_4 .grid_1 {
     display:inline-block;
-	width:625px;
+	width:618px;
     font-size:0.9em;
     padding: 11px 11px 11px 11px;
     background-color: rgb(20, 30, 20);
@@ -134,7 +135,7 @@ table {
 
 .container_4 .grid_1_head {
     display:inline-block;
-	width:640px;
+	width:1011px;
     float: left;
     font-size:0.9em;
     padding: 0px 8px 8px 0px;
@@ -149,12 +150,12 @@ table {
 .container_4 .grid_2 {
     display:inline-block;
 	width:1011px;
-    color: rgb(40, 70, 40);
+    color: rgb(255, 255, 255);
     text-align: center;
         border-style: solid;
         border-width: 1px;
         border-color: rgb(40, 40, 40);
-    background-color: rgb(230, 240, 230);
+    background-color: rgb(120, 130, 120);
     padding: 0px 0px 0px 8px;
     margin-left: 9px;
     margin-bottom: 0px;
@@ -167,8 +168,8 @@ table {
     border-style: solid;
     border-width: 1px;
     border-color: rgb(40, 70, 40);
-    background-color: rgb(230, 240, 230);
-    padding: 8px 8px 8px 8px;
+    background-color: rgb(120, 130, 120);
+    padding: 11px 11px 11px 11px;
     margin: 10px 10px 10px 5px;
 }
 
@@ -186,6 +187,10 @@ table {
 .spreader {
     width: 100%;
     margin-bottom: 8px;
+}
+
+.boxed {
+    background-color: rgb(95, 207, 52);
 }
 
 
