@@ -36,6 +36,8 @@ def index(request):
 
     soundsList = Sounds.objects.all()
 
+    storyList= storyList[:5]
+
 
     form = StoryForm()
 
