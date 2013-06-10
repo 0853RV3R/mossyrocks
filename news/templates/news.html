@@ -3,16 +3,16 @@
 {% block main %}
 <div class="grid_2">
     <div class="headerimages_alpha">
-        <img src="{{ STATIC_URL }}images/singer.jpg"  width="244" height="auto" />
+        <img src="{{ STATIC_URL }}images/singer.jpg"  width="234" height="auto" />
     </div>
     <div class="headerimages">
-        <img src="{{ STATIC_URL }}images/guitar.jpg"  width="244" height="auto" />
+        <img src="{{ STATIC_URL }}images/guitar.jpg"  width="234" height="auto" />
     </div>
     <div class="headerimages">
-        <img src="{{ STATIC_URL }}images/bass.jpg"  width="244" height="auto" />
+        <img src="{{ STATIC_URL }}images/bass.jpg"  width="234" height="auto" />
     </div>
     <div class="headerimages_omega">
-        <img src="{{ STATIC_URL }}images/drummer.jpg"  width="244" height="auto" />
+        <img src="{{ STATIC_URL }}images/drummer.jpg"  width="234" height="auto" />
     </div>
 
 </div>
@@ -107,8 +107,9 @@
             {{ instance.city }} | {{ instance.venue }} | {{ instance.date }} <br><br>
                 <a href="{{ instance.optional_link_1 }}">{{ instance.optional_link_1_description }}</a> <br><br>
                 <a href="{{ instance.optional_link_2 }}"> {{ instance.optional_link_2_description }}</a>
-            <br>
             </div>
+            <br>
+            
         {% endfor %}
 
         {% if user.is_authenticated %}

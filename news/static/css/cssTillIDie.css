@@ -18,7 +18,7 @@ body {
 
  font-family: 'Merriweather Sans', sans-serif;
  color: rgb(255, 255, 255);
- background-color: rgb(20, 30, 20);
+ background-color: rgb(40, 50, 40);
 
 
 }
@@ -128,30 +128,31 @@ table {
 
 .container_4 .grid_1 {
     display:inline-block;
-	width:620px;
+	width:570px;
     font-size:1em;
     padding: 11px 11px 11px 11px;
     background-color: rgb(0, 0, 0);
     /* border-style: solid;
     border-width: 1px;
     border-color: rgb(80, 90, 80); */
-    margin: 10px 5px 0px 10px;
+    margin: 0px 10px 0px 25px;
     min-height: 1000px;
     
 }
 
 .container_4 .grid_1_head {
     display:inline-block;
-	width:618px;
+	width:580px;
     float: left;
     font-size:0.9em;
     padding: 0px 8px 8px 0px;
     /*    border-style: solid;*/
     /*    border-width: 1px;*/
     /*    border-color: rgb(40, 40, 40); */
-    margin-right: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
     margin-bottom: 0px;
-    margin-left: 10px;
+    margin-left: 40px;
     
 }
 
@@ -164,19 +165,24 @@ table {
         border-width: 1px;
         border-color: rgb(40, 40, 40);  */
     background-color: rgb(0, 0, 0);
-    padding: 11px 11px 11px 11px;
+    padding: 20px 5px 20px 26px;
+    margin-left: 0px;
+    margin-bottom: 10px;
 }
 
 .container_4 .grid_3 {
     display:inline-block;
-    color: rgb(0, 0, 0);
-	width:343px;
-    border-style: solid;
+    color: white;
+	width:357px;
+    /*border-style: solid;
     border-width: 1px;
     border-color: rgb(40, 70, 40);
+    
     background-color: rgb(120, 130, 120);
+    */
+    background-color: rgb(0, 0, 0);
     padding: 11px 11px 11px 11px;
-    margin: 10px 10px 5px 5px;
+    margin: 0px 20px 20px 10px;
 }
 
 .container_4 .grid_3_head {
@@ -227,26 +233,26 @@ a {
 
 .headerimages {
     float: left;
-    margin: 0px 5px 0px 5px;
-    border-style: solid;
+    margin: 0px 6px 0px 5px;
+    /* border-style: solid;
     border-width: 1px;
-    border-color: rgb(40, 70, 40);
+    border-color: rgb(40, 70, 40); */
 }
 
 .headerimages_alpha {
     float: left;
-    margin: 0px 5px 0px 0px;
-    border-style: solid;
+    margin: 0px 6px 0px 0px;
+    /*border-style: solid;
     border-width: 1px;
-    border-color: rgb(40, 70, 40);
+    border-color: rgb(40, 70, 40);*/
 }
 
 .headerimages_omega {
     float: left;
-    margin: 0px 0px 0px 5px;
-    border-style: solid;
+    margin: 0px 0px 0px 6px;
+    /*border-style: solid;
     border-width: 1px;
-    border-color: rgb(40, 70, 40);
+    border-color: rgb(40, 70, 40);*/
 }
 
 
