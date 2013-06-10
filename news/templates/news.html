@@ -35,17 +35,51 @@
                         <td><br></td>
                     </tr>
                 </table>
+            
+                {% if entry.teaser %}
+            
                 <table>
                     <tr>
                         <td><div class="newsbody">{{ entry.teaser }}</div></td>
                         <br>
                     </tr>
-                    
+                    <tr>
+                        <td><div class="newsbody"><a href="{% url 'news.views.readMore' entry.id %}">read more</a></div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {% if user.is_authenticated %}
+                            <div class="newsbody"><a href="{% url 'news.views.deleteStory' entry.id %}"> delete story</a></div>
+                            {% endif %}
+                        </td>
+                    </tr>
                 </table>
-                <div class="metadata"><a href="{% url 'news.views.readMore' entry.id %}">read more</a></div>
+            
+                <br>
+                
+                
+                {% else %}
+            
+                <table>
+                    <tr>
+                        <td><div class="newsbody">{{ entry.message }}</div></td>
+                        <br>
+                    </tr>
+                    <tr>
+                        <td>
+                            {% if user.is_authenticated %}
+                            <div class="newsbody"><a href="{% url 'news.views.deleteStory' entry.id %}"> delete story</a></div>
+                            {% endif %}
+                        </td>
+                    </tr>
+                </table>
+            
+                {% endif %}
+            {% comment %}
             {% if user.is_authenticated %}
-            <div class="metadata"><a href="{% url 'news.views.deleteStory' entry.id %}"> delete story</a></div>
+            <div class="click"><a href="{% url 'news.views.deleteStory' entry.id %}"> delete story</a></div>
             {% endif %}
+            {% endcomment %}
                 <br><br><br>
                 <hr>
            

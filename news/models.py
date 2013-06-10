@@ -11,13 +11,18 @@ class Story(models.Model):
 
 	def teaser(self):
                 string = self.message[:200]
-                condition = True
-                while condition == True:
+                if len(string) > 190:
+                    condition = True
+                    itis = True
+                    while condition == True:
                         check = string[-1]
                         if check == " ":
+                            string = str(string) + " . . . "
                             condition = False
                         else:
                             string = string[:-1]
+                else:
+                        string = None
                 return string
                 
 

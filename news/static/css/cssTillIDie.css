@@ -206,6 +206,12 @@ table {
     background-color: rgb(95, 207, 52);
 }
 
+.newsbody a:hover {
+    background-color: rgb(95, 207, 52);
+    color: rgb(0, 0 , 0);
+    
+}
+
 
 
 .spreader {
