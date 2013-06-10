@@ -152,6 +152,20 @@ def deleteSounds(request, sound_id):
 
     return redirect(index)
 
+def deleteStory(request, story_id):
+
+    s = get_object_or_404(Story, pk=int(story_id))
+    s.delete()
+
+    return redirect(index)
+
+def deleteTourdate(request, tourdate_id):
+
+    s = get_object_or_404(Tourdate, pk=int(tourdate_id))
+    s.delete()
+
+    return redirect(index)
+
     
         
     
