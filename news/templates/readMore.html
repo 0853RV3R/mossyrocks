@@ -1,0 +1,28 @@
+{% extends 'news.html' %}
+
+{% block readMore %}
+
+<div class="grid_1">
+    <div class="clearfix">
+        <div class="title_2"><div class="boxed">stories</div></div><br><br>
+        <table>
+            <tr>
+                <td><div class="title_3">{{ storyMore.title }}</div></td>
+                <td><div class="date">{{ storyMore.date_posted }}</div></td>
+            </tr>
+            <tr>
+                <td><br></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><div class="newsbody">{{ storyMore.message }}</div></td>
+                <br>
+            </tr>
+        </table>
+        <br><br>
+        <div class="metadata"><a href="{% url 'news.views.index' %}"> return to home</a></div>
+    </div>
+</div>
+
+{% endblock readMore %}

@@ -200,15 +200,13 @@ table {
 }
 
 .metadata:hover {
-    width: 340px;
+    width: 343px;
     color: rgb(0, 0 , 0);
-    padding: 0 0 0 0px;
+    padding: 0 5px 0 5px;
     background-color: rgb(95, 207, 52);
 }
 
-.metadata a:hover {
-    color: rgb(0, 0, 0);
-}
+
 
 .spreader {
     width: 100%;
@@ -217,12 +215,13 @@ table {
 
 .boxed {
     background-color: rgb(85, 190, 42);
-    padding: 0 0 0 3px;
+    padding: 2px 2px 2px 5px;
 }
 
 .newsbody {
     font-size: 0.9em;
     padding: 0 8px 0 8px;
+    color: rgb(230, 230, 230);
 }
 
 .note {
@@ -230,7 +229,7 @@ table {
 }
 
 a {
-    color: rgb(0, 60, 0);
+    color: rgb(50, 90, 50);
 }
 
 .headerimages {

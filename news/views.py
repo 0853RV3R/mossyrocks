@@ -38,7 +38,6 @@ def index(request):
 
     storyList= storyList[:5]
 
-
     form = StoryForm()
 
     form2 = TourdateForm()
@@ -166,6 +165,23 @@ def deleteTourdate(request, tourdate_id):
 
     return redirect(index)
 
+def readMore(request, story_id):
     
+    s = get_object_or_404(Story, pk=int(story_id))
+
+    tourdateList = Tourdate.objects.all().order_by('-date')
+
+    contactList = Contact.objects.get(pk=int(1))
+
+    soundsList = Sounds.objects.all()
+
+    context = {
+        'storyMore': s,
+        'tourdate': tourdateList,
+        'contact': contactList,
+        'soundsList': soundsList,
+        }
+
+    return render(request, 'readMore.html', context)
         
     

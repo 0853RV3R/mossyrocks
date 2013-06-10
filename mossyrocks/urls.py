@@ -15,6 +15,7 @@ urlpatterns = patterns('',
      url(r'^deleteSounds/(\d+)/$', 'news.views.deleteSounds'),
      url(r'^deleteStory/(\d+)/$', 'news.views.deleteStory'),
      url(r'^deleteTourdate/(\d+)/$', 'news.views.deleteTourdate'),
+     url(r'^readMore/(\d+)/$', 'news.views.readMore'),
     #url(r'^mossyrocks/', include('mossyrocks.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

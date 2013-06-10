@@ -1,4 +1,5 @@
 from django.db import models
+import re
 
 # Create your models here.
 
@@ -7,6 +8,18 @@ class Story(models.Model):
 	title = models.CharField(max_length=300)
 	message = models.CharField(max_length=5000)
 	date_posted = models.DateField(auto_now = True)
+
+	def teaser(self):
+                string = self.message[:200]
+                condition = True
+                while condition == True:
+                        check = string[-1]
+                        if check == " ":
+                            condition = False
+                        else:
+                            string = string[:-1]
+                return string
+                
 
 
 	def __unicode__(self):
