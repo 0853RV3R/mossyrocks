@@ -66,8 +66,9 @@ table {
 }
 
 .subtext {
-    font-size: 0.9em;
+    font-size:0.9em;
     font-weight:700;
+    padding: 0 8px 0 8px;
 }
     
 
@@ -143,15 +144,15 @@ table {
 
 .container_4 .grid_1_head {
     display:inline-block;
-	width:580px;
+	width:570px;
     float: left;
     font-size:0.9em;
-    padding: 0px 8px 8px 30px;
+    padding: 0px 21px 8px 30px;
     /*    border-style: solid;*/
     /*    border-width: 1px;*/
     /*    border-color: rgb(40, 40, 40); */
-    margin-top: 10px;
-    margin-right: 10px;
+    margin-top: 20px;
+    margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
     
@@ -203,11 +204,11 @@ table {
     width: 343px;
     color: rgb(0, 0 , 0);
     padding: 0 5px 0 5px;
-    background-color: rgb(95, 207, 52);
+    background-color: rgb(85, 170, 42);
 }
 
 .newsbody a:hover {
-    background-color: rgb(95, 207, 52);
+    background-color: rgb(85, 170, 42);
     color: rgb(0, 0 , 0);
     
 }
@@ -220,7 +221,7 @@ table {
 }
 
 .boxed {
-    background-color: rgb(85, 190, 42);
+    background-color: rgb(85, 170, 42);
     padding: 2px 2px 2px 5px;
 }
 
@@ -235,7 +236,7 @@ table {
 }
 
 a {
-    color: rgb(50, 90, 50);
+    color: rgb(50, 100, 50);
 }
 
 .headerimages {
